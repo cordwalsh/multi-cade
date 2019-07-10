@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./main-page.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="./css/main.css" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Epic Arcades</title>
+  </head>
+  <body>
+
+
+    <!-- ==========================splash page============================================ -->
+
+    <div id="splashform">
+      <div id="splash-content">
+        <h1 id="splash-h1">EpicArcades</h1>
+        <ul id="splash-ul">
+          <li id="splash-li">Use the <span class="key key--arrow">&larr;</span> and <span class="key key--arrow">&rarr;</span> keys to change background.</li>
+          <li id="splash-li">Use <span class="key">spacebar</span> to game immediately.</li>
+        </ul>
+      <button id="splash-button" type="submit" class="btn">START</button>
+      </div>
+    </div>
+
+<!-- ==========================nav bar============================================ -->
+      <div class="topnav">
+       <a class="active" href="#">Home</a>
+       <a href="#">Languages</a>
+       <a href="#">Search</a>
+       <a href="#">About</a>
+      </div>
+      <p id="logo">EpicArcades</p>
+
+<!-- =====================main page=========================================== -->
+
+<div id="main-page">
+<div class="banner" style="padding:15px; text-align: center;">
+  <div class="banner-content">
+    <img id="banner-art" src="images/sunset.gif" alt="">
+    <div class="banner-text">
+      <h1>EpicArcades</h1>
+    <p>game tutorials made easy</p>
+    <br>
+    <h4 id="banner-ready">READY PLAYER 1</h4>
+  </div>
+</div>
+</div>
+      <div id="contain" class="container">
+        <div class="featured">
+        <h3 class="section">Featured</h3>
+        <div class="row">
+      <div class="col s12 m6">
+        <div id='card1' class="card">
+          <div class="card-image">
+            <img class="still project-image" src="./images/asteroids.png">
+            <img id="gif1" class="project-image" src="./images/asteroids.gif">
+            <span class="card-title">Asteroids</span>
+          </div>
+          <div class="card-content">
+            <p>A classic game of space survival!</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Play Game</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="project-image" src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Play Game</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div id="card2" class="card-image">
+            <img class="still2 project-image" src="./images/flappy.png">
+              <img id="gif2" class="project-image" src="./images/flappy.gif">
+            <span class="card-title">Flappy Kirby</span>
+          </div>
+          <div class="card-content">
+            <p>How long can you keep Kirby afloat?</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img class="project-image" src="">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  </body>
+</html>
