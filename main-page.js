@@ -1,6 +1,12 @@
 
 
 $(document).ready(function () {
+  window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
   $('#splash-button').click(function (event) {
     $('#splashform').hide();
     $('#main-page').show();
@@ -18,6 +24,13 @@ $(document).ready(function () {
   $('#card1').mouseenter(function () {
     $('#gif1').show();
     $('.still').hide();
+  });
+
+  $('#card1').click(function () {
+    $('#main-page').hide();
+    $('#asteroids').fadeIn();
+    $('#arcade-background').fadeIn();
+    window.scrollTo(0, 0);
   });
 
   $('#card1').mouseleave(function () {

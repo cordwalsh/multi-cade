@@ -193,3 +193,22 @@ body {
   line-height: 0.3;
   top: .05em;
 }
+
+#arcade-background {
+  z-index: 900;
+  display: none;
+  opacity: 0.95;
+  position: relative;
+  bottom: 578px;
+  width: 100%;
+}
+
+#asteroids {
+  z-index: 1000;
+  position: relative;
+  left: 285px;
+  top: 235px;
+  display:none;
+  border-radius: 5px;
+  box-shadow: 4px 8px 40px 20px pink;
+}
