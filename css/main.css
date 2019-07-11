@@ -2,6 +2,11 @@ body {
   background-color: "white";
 }
 
+h5, p {
+  font-family: 'Russo One', sans-serif;
+}
+
+
 .topnav {
   display: none;
 }
