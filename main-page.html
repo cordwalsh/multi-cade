@@ -74,14 +74,14 @@
         </div>
       </div>
       <div class="col s12 m6">
-        <div class="card">
+        <div id='card2' class="card">
           <div class="card-image">
-            <img class="project-image" src="">
-            <span class="card-title">Card Title</span>
+
+            <!-- <img id="gif3" class="project-image" src="./images/frogger.gif"> -->
+            <span class="card-title">Frogger</span>
           </div>
           <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <p>A classic game of trying to cross the street man!</p>
           </div>
           <div class="card-action">
             <a href="#">Play Game</a>
@@ -131,5 +131,36 @@
 <script src="./asteroids.js" charset="utf-8"></script>
 </div>
 <img id="arcade-background" src="./images/arcade1.jpg" alt="">
-  </body>
 </html>
+<!-- =======================================frogger=================================== -->
+<div class="frogger-container">
+  <style>
+      @font-face {
+        font-family: 'Arcade Classic';
+        src: url('fonts/arcadeclassic.eot');
+        src: url('fonts/arcadeclassic.eot?#iefix') format('embedded-opentype'),
+             url('fonts/arcadeclassic.woff') format('woff'),
+             url('fonts/arcadeclassic.ttf') format('truetype'),
+             url('fonts/arcadeclassic.svg#arcadeclassic') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+        .canvas {
+          position: absolute;
+          margin: 40px;
+          border: 2px solid #000;
+          max-width: 450px;
+          max-height: 650px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+      <div class="frogger-game">
+      <canvas id="background-canvas" class="canvas" width="960" height="1280"></canvas>
+      <canvas id="canvas" class="canvas" width="960" height="1280"></canvas>
+      <script src="frogger.js"></script>
+    </div>
+    </div>
+    <img id="arcade-background2" src="images/arcade2.jpeg" alt="">
+</div>

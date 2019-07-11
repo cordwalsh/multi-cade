@@ -47,4 +47,21 @@ $(document).ready(function () {
     $('#gif2').hide();
     $('.still2').show();
   });
+
+  $('#card3').mouseenter(function () {
+    $('#gif1').show();
+    $('.still').hide();
+  });
+
+  $('#card3').click(function () {
+    $('#main-page').hide();
+    $('frogger-game').fadeIn();
+    $('#arcade-background2').fadeIn();
+    window.scrollTo(0, 0);
+  });
+
+  $('#card3').mouseleave(function () {
+    $('#gif1').hide();
+    $('.still').show();
+  });
 });

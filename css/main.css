@@ -212,3 +212,6 @@ body {
   border-radius: 5px;
   box-shadow: 4px 8px 40px 20px pink;
 }
+.frogger-game {
+  display: none;
+}
